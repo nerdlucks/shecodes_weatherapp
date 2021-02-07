@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+ <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/00188ce96c.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>WeatherApp</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row major-cities" id="major-cities">
+        <div class="col-1">Denver</div>
+        <div class="col-1">Paris</div>
+        <div class="col-1">Berlin</div>
+        <div class="col-1">Dublin</div>
+      </div>
+      <form class="search-form" id="search-form">
+          <div class="row">
+            <div class="col-6">
+              <input
+                type="search"
+                placeholder="Type a city.."
+                autofocus="on"
+                autocomplete="off"
+                id="city-input"
+                class="form-control shadow-sm"
+              />
+            </div>
+            <div class="col-2">
+              <input
+                type="submit"
+                value="Search"
+                class="form-control btn btn-primary shadow-sm"
+              />
+            </div>
+            <div class="col-3">
+                <button
+                  class="btn btn-success w-100"
+                  id="current-location-button"
+                >
+                  Current
+                </button>
+          </form>
+          <h1 id="city"></h1>
+          <ul>
+            <li id="date"></li>
+            <li id="description"></li>
+          </ul>
+          <div class="row">
+            <div class="col-6">
+              <div class="clearfix">
+                <div class="float-left">
+                  <span class="temperature" id="temperature"></span
+                  ><span class="units">°C</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li>Humidity: <span id="humidity"></span>%</li>
+                <li>Wind: <span id="wind"></span> km/h</li>
+              </ul>
+            </div>
+          </div>
+      </div>
+      <div class="row" id="essentials">
+        <div class="col-12" id="city-result">Sacramento</div>
+        <div class="col-12" id="current-time">Friday 12:42</div>
+        <div class="col-12" id="humidity">Humidity</div>
+        <div class="col-12" id="wind">km/hr</div>
+      </div>
+      <div class="sun">☀️</div>
+      <div class="row">
+        <div class="col-2">Sat</div>
+        <div class="col-2">Sun</div>
+        <div class="col-2">Mon</div>
+        <div class="col-2">Tue</div>
+        <div class="col-2">Wed</div>
+      </div>
+      <div class="row">
+        <div class="col-2">☀️</div>
+        <div class="col-2">☀️</div>
+        <div class="col-2">🌤</div>
+        <div class="col-2">☀️</div>
+        <div class="col-2">⛅️</div>
+      </div>
+      <div class="row">
+        <div class="col-2">19°</div>
+        <div class="col-2">19°</div>
+        <div class="col-2">18°</div>
+        <div class="col-2">21°</div>
+        <div class="col-2">17°</div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>

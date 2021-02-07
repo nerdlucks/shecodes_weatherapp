@@ -1,0 +1,39 @@
+ul {
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+li {
+  color: #7c7c7c;
+  font-size: 16px;
+  font-weight: 100;
+  height: 19px;
+  line-height: 1;
+  list-style: none;
+}
+
+.container {
+  margin: 20px;
+  border: #6c757d;
+  border-style: solid;
+  padding: 20px;
+}
+
+.container .row {
+  color: #6c757d;
+  padding: 15px;
+}
+
+#major-cities {
+  color: rgb(35, 19, 180);
+  padding: 15px;
+  text-align: left;
+}
+
+#current-btn {
+  color: tan;
+}
+
+.sun {
+  font-size: 80px;
+}
